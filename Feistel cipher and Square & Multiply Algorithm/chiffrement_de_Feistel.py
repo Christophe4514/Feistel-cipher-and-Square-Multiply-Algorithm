@@ -37,9 +37,3 @@ subkey2 = [0, 1, 1, 0]  # Sous-clé 2 de longueur 4 bits
 
 encrypted_block = feistel_encrypt(block, permutation, subkey1, subkey2)
 print("Texte chiffré:", encrypted_block)
-
-"""
-    Dans cet exemple, l'algorithme prend en entrée un bloc block de départ de longueur 8 bits, une permutation personnalisée permutation, ainsi que deux sous-clés subkey1 et subkey2 de longueur 4 bits. Il applique la permutation sur le bloc, divise le bloc en deux parties, effectue les calculs de chaque round, concatène les résultats, applique l'inverse de la permutation, puis retourne le texte chiffré.
-
-Dans cet exemple, le bloc de départ est [1, 0, 1, 0, 0, 1, 1, 0], la permutation est [4, 6, 0, 2, 7, 3, 1, 5], la sous-clé 1 est [1, 0, 1, 1] et la sous-clé 2 est [0, 1, 1, 0]. Le texte chiffré obtenu est [1, 1, 0, 0, 0, 1, 1, 1].
-    """

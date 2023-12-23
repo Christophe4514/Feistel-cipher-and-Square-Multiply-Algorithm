@@ -26,10 +26,3 @@ result = square_and_multiply(x, b, n)
 
 # Affichage du résultat
 print("Résultat :", result)
-
-
-"""
-    Dans cet exemple, l'algorithme demande à l'utilisateur d'entrer les valeurs de x, b et n. Ensuite, il applique l'algorithme des carrés et des multiplications pour calculer x^b (mod n). Le résultat est affiché à la fin.
-
-L'algorithme des carrés et des multiplications est une méthode efficace pour calculer une exponentiation modulaire. Il repose sur le fait que toute représentation binaire de l'exposant peut être exprimée comme une combinaison de puissances de 2. L'algorithme effectue des carrés successifs et des multiplications supplémentaires en fonction des bits de l'exposant pour obtenir le résultat final. Cela réduit le nombre total de multiplications requises par rapport à une méthode naïve de multiplication répétée.
-    """

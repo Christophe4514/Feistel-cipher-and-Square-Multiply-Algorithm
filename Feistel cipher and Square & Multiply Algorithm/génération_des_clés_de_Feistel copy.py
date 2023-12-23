@@ -30,9 +30,3 @@ right_shift_order = 1  # Ordre de décalage à droite
 subkey1, subkey2 = generate_feistel_subkeys(key, permutation, left_shift_order, right_shift_order)
 print("Sous-clé 1:", subkey1)
 print("Sous-clé 2:", subkey2)
-
-"""
-    Dans cet exemple, l'utilisateur peut définir la permutation personnalisée en modifiant la liste permutation, l'ordre de décalage à gauche en modifiant left_shift_order et l'ordre de décalage à droite en modifiant right_shift_order. Les autres parties de l'algorithme restent les mêmes que dans l'implémentation précédente.
-
-Notez que les valeurs des ordres de décalage doivent être des entiers positifs, et si nécessaire, vous pouvez ajouter des validations supplémentaires pour les entrées de l'utilisateur afin de garantir que les valeurs sont correctes.
-    """
